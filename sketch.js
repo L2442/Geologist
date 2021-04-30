@@ -19,7 +19,10 @@ function setup() {
 
 
 	Engine.run(engine);
-  plane1=new Plane(600,height,1200,20);
+  plane1=new Plane(600,600,1200,20);
+  plane2 = new Plane(-5,300,20,600);
+  plane3=new Plane(600,0,1200,20);
+  plane4 = new Plane(1200,300,20,600);
   hammer1=new Hammer(600,300);
   iron1=new Iron(600,400);
   rubber1=new Rubber(700,400);
@@ -32,10 +35,14 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(255);
+  background("yellow");
   
   
 plane1.display();
+plane2.display();
+plane3.display();
+plane4.display();
+
 hammer1.display();
 iron1.display();
 rubber1.display();

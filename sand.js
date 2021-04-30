@@ -3,13 +3,12 @@ class Sand {
     
      var options={
     
-    'restitution':3,
-    'friction':2,
-    'density':0.5
+    'restitution':0.2,
+    'friction':4,
+    'density':1
      }
-    this.body= Bodies.rectangle(x,y,5,3,options);
-    this.width=50;
-    this.height=30;
+    this.body= Bodies.circle(x,y,20,options);
+    this.radius=20;
     World.add(world,this.body);
     
     }
@@ -22,7 +21,7 @@ class Sand {
     translate(pos.x,pos.y);
     rotate(angle);
     fill("yellow");
-   rect(0,0,this.width,this.height);
+    ellipse(0,0,this.radius,this.radius);
     pop();
     }
     

@@ -7,9 +7,8 @@ class Rubber {
     'friction':1,
     'density':1
      }
-    this.body= Bodies.rectangle(x,y,50,30,options);
-    this.width=50;
-    this.height=30;
+    this.body= Bodies.circle(x,y,20,options);
+    this.radius = 20;
     World.add(world,this.body);
     
     }
@@ -22,7 +21,7 @@ class Rubber {
     translate(pos.x,pos.y);
     rotate(angle);
     fill("red");
-    rect(0,0,this.width,this.height);
+    ellipse(0,0,this.radius,this.radius);
     pop();
     }
     
