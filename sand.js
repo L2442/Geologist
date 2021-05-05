@@ -21,6 +21,7 @@ class Sand {
     translate(pos.x,pos.y);
     rotate(angle);
     fill("yellow");
+    ellipseMode(RADIUS);
     ellipse(0,0,this.radius,this.radius);
     pop();
     }

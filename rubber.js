@@ -3,7 +3,7 @@ class Rubber {
     
      var options={
     
-    'restitution':2,
+    'restitution':1.2,
     'friction':1,
     'density':1
      }
@@ -21,6 +21,7 @@ class Rubber {
     translate(pos.x,pos.y);
     rotate(angle);
     fill("red");
+    ellipseMode(RADIUS);
     ellipse(0,0,this.radius,this.radius);
     pop();
     }
